@@ -1,0 +1,56 @@
+body {
+    margin: 20px;
+    padding: 10px;
+}
+
+.text_box {
+    background-color: rgb(206, 202, 202);
+    padding: 20px;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+}
+
+.font-poppins {
+    font-family: 'Dongle', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.text_box2 {
+    background-color: rgb(206, 202, 202);
+    padding: 8px;
+    width: 100%;
+    height: fit-content;
+    text-align: right;
+}
+
+.box {
+    padding-bottom: 10px;
+    float: left;
+}
+
+.box2 {
+    padding-bottom: 10px;
+    float: right;
+}
+
+.menu {
+    padding-left: 20px;
+    float: right;
+}
+
+.profil {
+    padding-right: 20px;
+    width: 150px;
+    float: left;
+}
+
+.bodyform {
+    background-color: rgb(206, 202, 202);
+    padding: 8px;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
