@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 14</title>
+</head>
+<body>
+    <script>
+        // soal 1
+        // var compare = function(angka_1, angka_2){
+        //     if (angka_1 > angka_2){
+        //         return false;
+        //     } else if (angka_1 == angka_2){
+        //         return -1;
+        //     };
+            
+        //     return true;
+        // };
+
+        // console.log("5 dan 8 =", compare(5, 8));
+        // console.log("5 dan 3 =", compare(5, 3));
+        // console.log("4 dan 4 =", compare(4, 4));
+        // console.log("3 dan 3 =", compare(3, 3));
+        // console.log("17 dan 2 =", compare(17, 2));
+
+        // soal 2
+        // var reverseText = function(text){
+        //     return text.split("").reverse().join("");
+        // };
+
+        // console.log(reverseText("Halo Apa Kabar?"));
+
+        // soal 3
+        // var sortText = function(text){
+        //     return text.split("").sort().join("");
+        // };
+
+        // console.log(sortText("Halo Apa Kabar?"));
+
+        // soal 4
+        // var cekDeret = function(angka){
+        //     for(var i = 0; i<angka.length-1; i++){
+        //         if (angka[i+1]-angka[i] != angka[1]-angka[0]){
+        //             return false;
+        //         }
+        //     }
+
+        //     return true;
+        // }
+
+        // console.log(cekDeret([1,2,3,4]));
+
+        // soal 5
+        // var cekAB = function(text){
+        //     for(var i = 0; i<text.length;i++){
+        //         if(text[i] == "a" && text[i+4]=="b" || text[i] == "b" && text[i+4]=="a"){
+        //             return true;
+        //         };
+        //     };
+
+        //     return false;
+        // }
+
+        // console.log(cekAB("lane borrowed"));
+
+        // soal 6
+        // var fpb = function(angka_1, angka_2){
+        //     var hasil = 1;
+        //     for (var i = 1; i <= Math.min(angka_1, angka_2); i++){
+        //         if (angka_1%i==0 && angka_2%i==0){
+        //             hasil = i;
+        //         };
+        //     };
+
+        //     return hasil;
+        // };
+
+        // console.log("fpb dari 12 dan 16 =", fpb(12, 16));
+
+        // soal 7
+        // var prima = function(angka){
+        //     var hasil = 1;
+        //     for (var i = 2; i < (angka/2)+1; i++){
+        //         if (angka%i==0){
+        //             hasil = i;
+        //         };
+        //     };
+
+        //     if (hasil==1 && angka>1){
+        //         return true;
+        //     };
+
+        //     return false;
+        // };
+
+        // console.log("apakah 5 merupakan prima?", prima(5));
+
+        // soal 8
+        var prima = function(angka){
+            var hasil = 1;
+            for (var i = 2; i < (angka/2)+1; i++){
+                if (angka%i==0){
+                    hasil = i;
+                };
+            };
+
+            if (hasil==1 && angka>1){
+                return true;
+            };
+
+            return false;
+        };
+
+        var angkaPrima = function(angka_1,angka_2){
+            var total =[];
+
+            for(var i =Math.min(angka_1, angka_2); i<=Math.max(angka_1, angka_2); i++){
+                if(prima(i)==true){
+                    total.push(i);
+                };
+            };
+
+            return total;
+        };
+
+        console.log("bilangan prima antara 1 dan 5 adalah", angkaPrima(1,5));
+    </script>
+</body>
+</html>

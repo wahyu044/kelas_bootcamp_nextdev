@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 11</title>
+    <style>
+        #target {
+            color: aqua;
+        }
+
+        .cetak-miring {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1 id="target" class="cetak-miring">Halo</h1>
+
+    <div class="card"></div>
+
+    <p id="parag1">satu</p>
+    <p id="parag2">dua</p>
+    <p id="parag3">tiga</p> -->
+
+    <h1>nama</h1>
+    <input type="text" id="inputan">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $ sign
+            // $("#target").text("Hi"); -> replace
+            // $("h1").text("Hi");
+            // $(".heading").text("Hi");
+
+            // css(property, value)
+            // $("#target").css("font-size", "40px");
+            // $("#target").css({
+            //     "font-size" : "40px",
+            //     "color" : "red"
+            // });
+
+            // attr (merubah atribut elemen html)
+            // $("#target").attr("class", "cetak-miring");
+
+            // render tag html -> replace
+            // $(".card").html("<h2>sub judul</h2>");
+
+            // menambahkan
+            // $(".card").append("<h2>sub judul 2</h2>");
+
+            // .hide menyembunyikan
+            // $("#parag2").hide();
+
+            // .show menampilkan
+            // $("#parag2").show();
+
+            // .fadeOut menyembunyikan
+            // $("#parag2").fadeOut();
+
+            // .fadeIn menampilkan
+            // $("#parag2").fadeIn();
+
+            // .slideUp menyembunyikan
+            // $("#parag2").slideUp();
+
+            // .slideDown menampilkan
+            // $("#parag2").slideDown();
+
+            // var ganti = function(){
+            //     var warna = prompt("masukkan warna");
+
+            //     $("body").css({
+            //         "background-color" : warna,
+            //         "color" : "white"
+            //     });
+            // };
+
+            // $("h1").click(ganti);
+
+            // $("h1").on("click",ganti);
+
+            // $("h1").on("mouseover",ganti);
+
+            // $("h1").on("mouseleave",ganti);
+
+            // $("h1").on("keypress",ganti);
+
+            // $("h1").on("focus",ganti);
+
+            // $("h1").on("blur",ganti);
+
+            // $("h1").on("dblclick",ganti);
+
+            // $("#parag1").on("click", function(){
+            //     // $(this).attr("class", "red");
+            //     $(this).addClass("red");
+            //     // $(this).removeClass("red");
+            //     // $(this).toggleClass("red");
+            // })
+
+            // keypress
+            $("#inputan").on("keypress", function(event){
+                var kode = event.keyCode;
+                console.log(kode);
+
+                if(code == 13){
+                    var nama = $(this).val();
+                    console.log(nama);
+                    $("h1").text(nama);
+                };
+            });
+        }); // menunggu html dirender
+    </script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 12</title>
+</head>
+<body>
+    <script>
+        var text = "Belajar JavaScript jjjavaScripttt";
+        var pola = /JavaScript/;
+        var pola2 = /javascript/i; //incase sensitive
+        var pola3 = /javascript/gi; // global
+        var pola4 = /\bjavascript\b/gi; // mengandung
+
+        var hasil = pola.test(text); //mengecek (case sensitive)
+        var hasil2 = pola2.test(text); //mengecek
+
+        console.log(hasil);
+        console.log(hasil2);
+
+        // .exec
+
+        var hasil3 = pola2.exec(text);
+        console.log(hasil3);
+
+        var hasil4 = pola2.exec(text);
+        console.log(hasil4);
+
+        var hasil6 = pola3.exec(text);
+        console.log(hasil6);
+
+        var hasil8 = pola4.exec(text);
+        console.log(hasil8);
+
+        // .match
+
+        var hasil5 = text.match(pola2);
+        console.log(hasil5);
+
+        var hasil7 = text.match(pola3);
+        console.log(hasil7);
+
+        var hasil9 = text.match(pola4);
+        console.log(hasil9);
+
+        // excercise
+
+        var str1 = 'is; (this)';
+        var str2 = "The food isn't good";
+        var str3 = 'the2 cats';
+        var str4 = 'switch on the light';
+        var polaContoh1 = /\bis\b/gi;
+        var polaContoh2 = /\bas\b/gi;
+        var polaTotal = /\bis\b || \bas\b/;
+
+        var hasilStr11 = polaContoh1.test(str1);
+        var hasilStr12 = polaContoh2.test(str1);
+        console.log("Hasil pengecekan (is) pada str1",hasilStr11 || hasilStr12);
+
+        var hasilStr21 = str2.match(polaContoh1);
+        var hasilStr22 = str2.match(polaContoh2);
+        console.log("Hasil pengecekan (as) pada str2",hasilStr21 || hasilStr22);
+
+        var hasilStrTot = polaTotal.test(str1);
+        console.log("Hasil pengecekan (is dan as) pada str1",hasilStrTot);
+
+        // 
+
+        var kalimat = "do you know"
+        var pattern = /[oy]/gi;
+
+        var hasilPattern = kalimat.match(pattern);
+        console.log(hasilPattern);
+
+        // 
+        
+        var kalimat2 = "bag bug big"
+        var pattern2 = /b[aui]g/gi;
+
+        var hasilPattern2 = kalimat2.match(pattern2);
+        console.log(hasilPattern2);
+
+        // 
+        
+        var pattern3 = /[^aui]/gi;
+
+        var hasilPattern3 = kalimat2.match(pattern3);
+        console.log(hasilPattern3);
+
+        // 
+
+        var contoh = 'They ate 5 apples and 5 oranges';
+        var polaExcercise = /5/g;
+        var result = contoh.replace(polaExcercise, "five");
+
+        console.log(result);
+
+        // 
+
+        var ganti = "bred red spread credible red;";
+        var polaGanti = /\bred\b/g;
+        var hasilGanti = ganti.replace(polaGanti, "brown");
+
+        console.log(hasilGanti);
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 11 excercise</title>
+    
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        var gambar = prompt("pilih gambar");
+
+        if(gambar == 1){
+            $("body").append('<img src="https://i.ytimg.com/vi/jHWKtQHXVJg/maxresdefault.jpg" alt="gambar kucing" height="500">');
+        } else if(gambar == 2){
+            $("body").append('<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oryctolagus_cuniculus_Tasmania_2.jpg/1200px-Oryctolagus_cuniculus_Tasmania_2.jpg" alt="gambar kucing" height="500">');
+        } else if(gambar == 3){
+            $("body").append('<img src="https://gdmagri.com/wp-content/uploads/2021/07/harga-hamster.jpg" alt="gambar kucing" height="500">');
+        } else {
+            document.getElementById("ganti").innerHTML = "pilihan anda salah";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 9</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+    <img src="" alt="">
+
+    <script>
+        (function(){
+            var req = new XMLHttpRequest();
+
+            // GET (list atau details)
+            // POST (menyimpan data)
+            // PUT (mengedit)
+            // DELETE (menghapus)
+
+            // endpoint : link/url dari API
+
+            req.open("GET", "https://randomuser.me/api/", true);
+
+            req.send();
+
+            req.onload = function(){
+                console.log("onload");
+
+                var data = JSON.parse(this.responseText);
+
+                console.log(data.results[0]);
+
+                var nama = data.results[0].name.title + " " + data.results[0].name.first + " " + data.results[0].name.last;
+                var akun = data.results[0].email;
+                var foto = data.results[0].picture.thumbnail;
+
+                document.getElementById("nama").innerHTML = nama;
+                document.getElementById("akun").innerHTML = akun;
+                document.getElementById("foto").innerHTML = foto;
+            }
+        })();
+
+        // req.onerror = function(){
+        //     console.log("onerror");
+        // }
+
+        // req.onprogress = function(){
+        //     console.log("onprogress");
+        // }
+
+        // req.onreadystatechange = function(){
+        //     console.log("onreadystatechange", this.readyState);
+        //     console.log("onreadystatechange", this.status);
+
+        //     if (this.readyState == 4 && this.status == 200) {
+        //         console.log("sukses");
+
+        //         var data = JSON.parse(this.responseText);
+
+        //         console.log(data.results[0]);
+        //     } else if (this.readyState == 4 && this.status == 404) {
+        //         console.log("endpoint tidak ditemukan");
+        //     } else if (this.readyState == 4 && this.status == 500) {
+        //         console.log("server sedang bermasalah");
+        //     };
+        // }
+    </script>
+</body>
+</html>

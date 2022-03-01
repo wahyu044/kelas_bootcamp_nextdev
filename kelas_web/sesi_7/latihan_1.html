@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 7</title>
+</head>
+<body>
+    <h1>judul</h1>
+    <script>
+        // var buahBanyak = ["jeruk", "apel", "pisang"];
+
+        // // buahBanyak[3] = "anggur";
+        // // buahBanyak[0] = "melon";
+        // // buahBanyak[buahBanyak.length] = "kelengkeng";
+
+        // console.log("awal = " + buahBanyak);
+
+        // buahBanyak.push("salak");
+
+        // console.log("push = " + buahBanyak);
+
+        // buahBanyak.pop();
+
+        // console.log("pop = " + buahBanyak);
+
+        // buahBanyak.unshift("mangga");
+
+        // console.log("unshift = " + buahBanyak);
+
+        // buahBanyak.shift();
+
+        // console.log("shift = " + buahBanyak);
+
+        // var garasi = ["beat", "mio", "vario"];
+
+        // var mulai = 1;
+        // var jumlahHapus = 1;
+
+        // console.log("awal = " + garasi);
+
+        // garasi.splice(mulai, jumlahHapus);
+
+        // console.log("splice (hapus) = " + garasi);
+
+        // garasi.splice(mulai, 0, "supraX");
+
+        // console.log("splice (nambah) = " + garasi);
+
+        // var buah_1 = ["jeruk", "apel", "pisang"];
+        // var buah_2 = ["nangka", "mangga", "salak"];
+
+        // console.log("buah_1 = " + buah_1);
+        // console.log("buah_2 = " + buah_2);
+
+        // var totalBuah = buah_1.concat(buah_2);
+
+        // console.log("total = " + totalBuah);
+
+        // var cloneBuah = buah_1.slice();
+
+        // console.log("clone = " + cloneBuah);
+
+        // var tesSort = ["wahyu", "rayhan", "aron"];
+
+        // console.log("awal = " + tesSort);
+
+        // tesSort.sort();
+
+        // console.log("sort = " + tesSort);
+
+        // tesSort.reverse();
+
+        // console.log("reverse = " + tesSort);
+
+        // var sortAngka = ["1", "10", "3", "8"];
+
+        // sortAngka.sort();
+
+        // console.log("sort = " + sortAngka);
+
+        // sortAngka.reverse();
+
+        // console.log("reverse = " + sortAngka);
+
+        // sortAngka.sort(function(a,b){return a-b});
+
+        // console.log("sort = " + sortAngka);
+
+        // sortAngka.reverse(function(a,b){return b-a});
+
+        // console.log("reverse = " + sortAngka);
+
+        // var kalimat = "contoh kalimat panjang";
+
+        // console.log("kalimat = " + kalimat);
+
+        // var kata = kalimat.split(" ");
+
+        // console.log("split = ", kata);
+
+        // console.log("Math.pow(9, 2) = " + Math.pow(9, 2));
+
+        // console.log("Math.random(0, 1) = " + Math.random(0, 1));
+
+        // console.log("Math.floor(7.2) = " + Math.floor(7.2));
+
+        // console.log("Math.ceil(7.2) = " + Math.ceil(7.2));
+
+        // pake map
+
+        // var buletAtas = function(angka){
+        //     return Math.ceil(angka);
+        // }
+
+        // 
+
+        var nama = prompt("masukkan nama");
+        var kelamin = prompt("masukkan jenis kelamin");
+
+        var male = ["wahyu", "reyhan", "aron", "joshua", "restra"];
+        var female = ["nur", "anisa", "aram", "yesi", "nabila"];
+
+        if (kelamin == "cowok"){
+            console.log("pasangan anda adalah :", female[Math.floor(Math.random(0, female.length+1))]);
+            console.log("jumlah anak anda adalah :", Math.ceil(Math.random() * 5));
+        } else if (kelamin == "cewek"){
+            console.log("pasangan anda adalah :", male[Math.floor(Math.random(0, male.length+1))]);
+            console.log("jumlah anak anda adalah :", Math.ceil(Math.random() * 5));
+        } else {
+            console.log("masukkan jenis kelamin dengan benar")
+        }
+
+
+    </script>
+</body>
+</html>

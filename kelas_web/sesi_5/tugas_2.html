@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 2</title>
+    <link rel="stylesheet" href="styling_tugas.css">
+</head>
+<body>
+    <div class="menu">My Inventory</div>
+    <div class="menu">Blog</div>
+    <div class="menu">Gallery</div>
+    <div class="menu">Product</div>
+    <div class="menu">Home</div>
+    <br><br><br>
+    <img class="profil" src="2020-10-31 00_00_36-.png" alt="" width="100px">
+    <div class="profil">
+        <h1 id="h_nama_h1"></h1>
+        <p>Tugas 2</p>
+        <div>
+            <form action="/action_page.php" method="get">
+                <input type="button" value="Save">
+                <input type="button" value="Edit">
+            </form> 
+        </div>
+    </div>
+    <table class="profil">
+        <tr>
+            <td>Nama</td>
+            <td id="h_nama"></td>
+        </tr>
+        <tr>
+            <td>Hobi</td>
+            <td id="h_hobi"></td>
+        </tr>
+        <tr>
+            <td>Background</td>
+            <td id="h_background"></td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td id="h_email"></td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <div>Nama</div>
+    <input id="nama" class="form" type="text">
+    <br><br>
+    <div>Hobi</div>
+    <input id="hobi" class="form" type="text">
+    <br><br>
+    <div>Background</div>
+    <input id="background" class="form" type="text">
+    <br><br>
+    <div>Email</div>
+    <input id="email" class="form" type="text">
+
+    <br><br>
+    <input type="button" value="Submit" onclick="simpan()">
+
+    <script>
+        var simpan = function(){
+            var nama = document.getElementById("nama").value;
+            var hobi = document.getElementById("hobi").value;
+            var background = document.getElementById("background").value;
+            var email = document.getElementById("email").value;
+
+            document.getElementById("h_nama_h1").innerHTML = nama;
+            document.getElementById("h_nama").innerHTML = nama;
+            document.getElementById("h_hobi").innerHTML = hobi;
+            document.getElementById("h_background").innerHTML = background;
+            document.getElementById("h_email").innerHTML = email;
+        };
+    </script>
+
+</body>
+</html>

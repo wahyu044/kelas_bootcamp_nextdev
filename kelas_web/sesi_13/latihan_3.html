@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 13</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var produk = [
+                {
+                    nama : "Xiaomi",
+                    harga : 10000
+                }, {
+                    nama : "LG",
+                    harga : 20000
+                }
+            ];
+
+            var tambah = function(prod){
+                return new Promise(function(resolve, reject){
+                    setTimeout(function(){
+                        produk.push(prod);
+
+                        var berhasil = true;
+
+                        if(berhasil){
+                            resolve({
+                                result : produk,
+                                status : "sukses"
+                            });
+                        } else {
+                            reject({
+                                result : [],
+                                status : "error"
+                            });
+                        };
+                    }, 3000);
+                });
+            };
+
+            var ambil = function(){
+                setTimeout(function(){
+                    console.log(produk);
+                }, 1000);
+            };
+
+            var baru = {
+                nama : "Vivo",
+                harga : 30000
+            };
+
+            // tambah(baru)
+            //     .then(function(data){
+            //         console.log(data.result);
+            //     })
+            //     .catch(function(){
+            //         console.log(data.result);
+            //     });
+
+            var mulai = async function(){
+                await tambah(baru);
+                ambil();
+                console.log("done");
+            };
+
+            mulai();
+
+        }); // menunggu html dirender
+    </script>
+</body>
+</html>

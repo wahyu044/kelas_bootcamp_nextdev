@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 5 part 2</title>
+</head>
+<body>
+    <script>
+        // var welcoming = function() {
+        //     console.log("Welcome");
+        // };
+
+        // welcoming();
+
+        // function welcome_2() {
+        //     console.log("Welcome");
+        // };
+
+        // welcome_2();
+
+        // var welcome_3 = () => console.log("Welcome");
+
+        // welcome_3();
+
+        // var jumlah = function(angka_1,angka_2) {
+        //     var hasil = parseInt(angka_1) + parseInt(angka_2);
+        //     console.log(hasil);
+        // };
+
+        // var input_1 = prompt("masukkan angka pertama");
+        // var input_2 = prompt("masukkan angka kedua");
+
+        // jumlah(input_1,input_2);
+
+        // var jumlah = function(angka_1,angka_2) {
+        //     return parseInt(angka_1) + parseInt(angka_2);
+        // };
+
+        // var input_1 = prompt("masukkan angka pertama");
+        // var input_2 = prompt("masukkan angka kedua");
+        
+        // console.log(jumlah(input_1,input_2));
+        // alert(jumlah(input_1,input_2));
+
+        // var pembayaran = function(harga, taxRate){
+        //     var tax = parseInt(harga) * parseInt(taxRate) / 100;
+        //     return parseInt(harga) + tax;
+        // };
+
+        // var harga = prompt("masukkan harga");
+        // var taxRate = prompt("masukkan taxRate");
+
+        // alert(pembayaran(harga,taxRate));
+
+        // var kalikan = function(angka_satu,angka_dua,angka_tiga=3,angka_empat=4){
+        //     return angka_satu * angka_dua * angka_tiga * angka_empat;
+        // };
+
+        // var hasil = kalikan(1,2);
+        // console.log(hasil);
+
+        var sayWelcome = function(name, type){
+            let sayS = [
+                "Halo selamat datang, ",
+                "Hi welcome, "
+            ];
+
+            return sayS[type] + name;
+        };
+
+        var user = prompt("masukkan nama");
+        console.log(sayWelcome(user,1));
+
+    </script>
+</body>
+</html>

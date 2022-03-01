@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 15</title>
+</head>
+<body>
+    <script>
+        // selection sort
+
+        var angka = [27, 38, 4, 43, 9, 82, 10];
+
+        console.log("awal =", angka);
+
+        for(i = 0; i < angka.length - 1; i++){
+            for(j = i + 1; j < angka.length; j++){
+                if(angka[i] > angka[j]){
+                    min = angka[j];
+                    angka[j] = angka[i];
+                    angka[i] = min;
+                };
+            };
+
+            console.log("tahap ke-" + (i + 1) + " = " + angka);
+        };
+
+        // linear search
+
+        function linear(arr, toFind){
+            for(i = 0; i < arr.length; i++){
+                if(arr[i] == toFind){
+                    return i;
+                };
+            };
+
+            return null;
+        };
+
+        console.log(linear(angka, 4));
+
+        // binary search
+
+        function binary(sortArr, toFind){
+            var lowIndex = 0;
+            var highIndex = sortArr.length - 1;
+
+            while(lowIndex <= highIndex){
+                var midIndex = Math.floor((lowIndex + highIndex) / 2);
+
+                if(sortArr[midIndex] == toFind){
+                    return midIndex;
+                } else if(sortArr[midIndex] < toFind){
+                    lowIndex = midIndex + 1;
+                } else {
+                    highIndex = midIndex - 1;
+                };
+            };
+
+            return null;
+        };
+
+        console.log(binary(angka, 4));
+
+        // insertion sort
+        
+    </script>
+</body>
+</html>

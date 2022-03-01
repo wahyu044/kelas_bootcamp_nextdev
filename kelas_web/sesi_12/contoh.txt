@@ -1,0 +1,17 @@
+// menunggu sampai semua HTML component kita selesai dirender oleh browser
+        $(document).ready(function () {
+            $.ajax({
+                url: 'https://kipi.covid19.go.id/api/get-province',
+                dataType: 'json',
+                beforeSend: function(){
+                    //do something while load the data
+                    console.log("beforeSend");
+                }, success: function(data){
+                    console.log("success");
+                    console.log(data);
+                }, error: function(data){
+                    console.log(data);
+                    $("h1").text("API sedang bermasalah");
+                }
+            });
+	});

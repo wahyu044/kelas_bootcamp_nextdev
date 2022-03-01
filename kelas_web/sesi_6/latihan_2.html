@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 6 part 2</title>
+</head>
+<body>
+    <h1 id="nilai"></h1>
+    <h1 id="hasil"></h1>
+
+    <script>
+        // var jam = prompt('masukkan jam');
+        // var ucapan;
+
+        // if (jam <= 12){
+        //     ucapan = 'good morning';
+        //     console.log(ucapan);
+        // } else if (jam >= 18) {
+        //     ucapan = 'good night';
+        //     console.log(ucapan);
+        // } else {
+        //     ucapan = 'good afternoon';
+        //     console.log(ucapan);
+        // };
+
+        // document.getElementById("judul").innerHTML = ucapan;
+
+        // var usia = prompt('masukkan usia');
+        // var kelulusan = prompt('masukkan hasil ujian');
+
+        // if (usia >= 17 && kelulusan == 'lulus'){
+        //     console.log('selamat anda mendapat SIM');
+        // } else {
+        //     console.log('syarat mendapat SIM belum terpenuhi');
+        // };
+
+        // var punyaKTP = prompt('punya KTP?');
+        // var punyaKTM = prompt('punya KTM?');
+
+        // if (punyaKTP == 'ya' || punyaKTP == 'ya'){
+        //     console.log('selamat anda bisa ikut lomba');
+        // } else {
+        //     console.log('syarat ikut lomba belum terpenuhi');
+        // };
+
+        // 
+
+        // var nilai = prompt('masukkan nilai');
+        // var grade = 'cannot calculate your grade';
+
+        // if(nilai >= 81 && nilai <= 100){
+        //     grade = 'your grade is A';
+        // } else if(nilai >= 61 && nilai < 81){
+        //     grade = 'your grade is B';
+        // } else if(nilai >= 41 && nilai < 61){
+        //     grade = 'your grade is C';
+        // } else if(nilai >= 0 && nilai < 41){
+        //     grade = 'your grade is D';
+        // };
+
+        // document.getElementById("judul").innerHTML = grade;
+
+        // 
+        
+        var nilai = prompt('masukkan nilai');
+        var hari = 'angka tidak valid';
+
+        if(nilai == 1){
+            hari = 'senin';
+        } else if(nilai == 2){
+            hari = 'selasa';
+        } else if(nilai == 3){
+            hari = 'rabu';
+        } else if(nilai == 4){
+            hari = 'kamis';
+        } else if(nilai == 5){
+            hari = 'jumat';
+        } else if(nilai == 6){
+            hari = 'sabtu';
+        } else if(nilai == 7){
+            hari = 'minggu';
+        };
+
+        document.getElementById("nilai").innerHTML = nilai;
+        document.getElementById("hasil").innerHTML = hari;
+    </script>
+</body>
+</html>

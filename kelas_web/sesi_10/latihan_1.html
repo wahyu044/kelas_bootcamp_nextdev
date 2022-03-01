@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 10</title>
+</head>
+<body>
+    <h1 id="pemenang">judul</h1>
+
+    <script>
+        // var buahBuahan = ["apel", "jeruk", "mangga", "nangka", "rambutan"];
+
+        // console.log("awal = " + buahBuahan);
+
+        // buahBuahan.push("salak");
+
+        // console.log("tambah buah = " + buahBuahan);
+
+        // buahBuahan[buahBuahan.length-1] = "kelengkeng";
+
+        // console.log("ganti buah = " + buahBuahan);
+
+        // buahBuahan.pop();
+
+        // console.log("hapus buah = " + buahBuahan);
+
+        // 
+
+        // var deskripsiDiri = {
+        //     nama_depan : "nur",
+        //     nama_blkg : "wahyu",
+        //     jenis_klmn : "male",
+        //     hobi : ["game", "voli", "futsal"],
+        //     angka_favorit : 9,
+        //     memakai_kacamatan : false
+        // };
+
+        // console.log("data diri saya = ", deskripsiDiri);
+
+        // deskripsiDiri.angka_favorit = 8;
+
+        // console.log("data diri saya (2) = ", deskripsiDiri);
+
+        // deskripsiDiri.hobi.push("coding");
+
+        // console.log("data diri saya (3) = ", deskripsiDiri);
+
+        // deskripsiDiri.lulusan = "Hactive8";
+
+        // console.log("data diri saya (4) = ", deskripsiDiri);
+
+        // deskripsiDiri.hobi.forEach(element => {
+        //     console.log("hobi = ", element);
+        // });
+
+        // console.log("key objek = ", Object.keys(deskripsiDiri));
+
+        // console.log("value objek = ", Object.values(deskripsiDiri));
+
+        // var key = Object.keys(deskripsiDiri);
+
+        // key.forEach(function(k) {
+        //     console.log(k + " : " + deskripsiDiri[k]);
+        // });
+
+        // 
+
+        // var date = function(){
+        //     console.log("tanggal = ", new Date().getDate());
+        //     console.log("bulan = ", parseInt(new Date().getMonth())+1);
+        //     console.log("tahun = ", new Date().getFullYear());
+        // };
+
+        // date();
+
+        // var date2 = function(){
+        //     var tanggal = new Date().getDate();
+        //     var bulan = parseInt(new Date().getMonth())+1;
+        //     var tahun = new Date().getFullYear();
+        //     var sekarang = tanggal + " - " + bulan + " - " + tahun;
+        //     return sekarang;
+        // };
+
+        // 
+
+        // var cek = function(angka){
+        //     if(typeof angka != "number"){
+        //         return "invalid data";
+        //     };
+
+        //     // var hasil = "ganjil";
+
+        //     // if(angka%2==0){
+        //     //     hasil = "genap"
+        //     // };
+
+        //     // return hasil;
+
+        //     return angka%2==0 ? "genap" : "ganjil";
+        // };
+
+        // 
+
+        // var supply = function(age, jumlah){
+        //     sisa = 100 - age;
+        //     jumlah /= 1000;
+        //     jumlahKurang = jumlah * sisa * 365;
+        //     return Math.ceil(jumlahKurang);
+        // }
+
+        // 
+
+        // var celToFah = function(suhu){
+        //     return suhu / 5 * 9 + 32;
+        // }
+
+        // var fahToCel = function(suhu){
+        //     return (suhu - 32) * 5 / 9;
+        // }
+
+        // 
+
+        var suit = function(pilih){
+            // var total = ["gunting", "batu", "kertas"];
+
+            var musuh = Math.floor(Math.random()*3);
+
+            var hasil = "seri";
+
+            if(pilih == 0 && musuh == 1){
+                hasil = "komputer menang";
+                return hasil;
+            } else if(pilih == 0 && musuh == 2){
+                hasil = "anda menang";
+                return hasil;
+            } else if(pilih == 1 && musuh == 0){
+                hasil = "anda menang";
+                return hasil;
+            } else if(pilih == 1 && musuh == 2){
+                hasil = "komputer menang";
+                return hasil;
+            } else if(pilih == 2 && musuh == 0){
+                hasil = "komputer menang";
+                return hasil;
+            } else if(pilih == 2 && musuh == 1){
+                hasil = "anda menang";
+                return hasil;
+            }
+
+            document.getElementById("pemenang").innerHTML = hasil;
+
+            return hasil;
+        }
+    </script>
+</body>
+</html>

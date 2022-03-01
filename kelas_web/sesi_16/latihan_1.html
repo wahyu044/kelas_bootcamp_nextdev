@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 16</title>
+</head>
+<body>
+    <h1>masukkan nama</h1>
+    <input type="text" placeholder="masukkan nama">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        // // var buah = ["apel"];
+
+        // localStorage.setItem("buah", ["apel", "durian"]);
+        
+        // // localStorage.setItem("mobil", {
+        // //     nama : "avansa",
+        // //     harga : 20000000
+        // // });
+
+        // var mobil =  {
+        //     nama : "avansa",
+        //     harga : 20000000
+        // };
+
+        // // menjadikan string
+        // // console.log(JSON.stringify(mobil));
+
+        // localStorage.setItem("mobil", JSON.stringify(mobil));
+
+        // mobil.jumlah = 4;
+
+        // localStorage.setItem("mobil", JSON.stringify(mobil));
+
+        // // menjadikan JSON
+        // console.log(JSON.parse(localStorage.getItem("mobil")));
+
+        $(document).ready(function(){
+            var nama =  JSON.parse(localStorage.getItem("nama"));
+            $("h1").text(nama.join(" | "))
+
+            $("input").on("keypress", function(event){
+                if(event.keyCode == 13){
+                    var isiInput = $(this).val();
+                    nama.push(isiInput);
+                    localStorage.setItem("nama", JSON.stringify(nama));
+                    $("h1").text(nama.join(" | "));
+                    $(this).val("");
+                };
+            });
+        });
+    </script>
+</body>
+</html>

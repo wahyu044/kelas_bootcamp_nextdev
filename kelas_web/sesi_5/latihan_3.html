@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 5 part 3</title>
+</head>
+<body>
+    <!-- <input type="checkbox" value="" onchange="showAlert()">
+    <input type="button" value="click" onclick="showAlert()">
+    <input type="button" value="click" onmouseout="showAlert()">
+    <input type="text" value="click" onkeydown="showAlert()">
+
+    <script>
+        var showAlert = function(){
+            alert("halo")
+        }
+    </script> -->
+
+    <p>
+        nama<input type="text" id="nama">
+    </p>
+    <p>
+        hobi<input type="text" id="hobi">
+    </p>
+    <p>
+        <input type="button" value="click" onclick="simpan()">
+    </p>
+
+    <h1 id="tes"></h1>
+
+    <script>
+        var simpan = function(){
+            var nama = document.getElementById("nama").value;
+            var hobi = document.getElementById("hobi").value;
+
+            document.getElementById("tes").innerHTML = nama + ", " + hobi;
+
+            console.log(nama);
+            console.log(hobi);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 13</title>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // sinkronus
+            // console.log('halo 1');
+            // console.log('halo 2');
+            // console.log('halo 3');
+
+            // asinkronus
+            // setTimeout(function(){
+            //     console.log('halo 1');
+            // }, 1000);
+            // setTimeout(function(){
+            //     console.log('halo 2');
+            // }, 3000);
+            // setTimeout(function(){
+            //     console.log('halo 3');
+            // }, 2000);
+
+            // 
+            // var produk = [
+            //     {
+            //         nama : "Xiaomi",
+            //         harga : 10000
+            //     }, {
+            //         nama : "LG",
+            //         harga : 20000
+            //     }
+            // ];
+
+            // var tambah = function(prod){
+            //     setTimeout(function(){
+            //         produk.push(prod);
+            //     }, 3000);
+            // };
+
+            // var ambil = function(){
+            //     setTimeout(function(){
+            //         console.log(produk);
+            //     }, 1000);
+            // };
+
+            // var baru = {
+            //     nama : "Vivo",
+            //     harga : 30000
+            // };
+
+            // tambah(baru);
+            // ambil();
+
+            // 
+            var produk = [
+                {
+                    nama : "Xiaomi",
+                    harga : 10000
+                }, {
+                    nama : "LG",
+                    harga : 20000
+                }
+            ];
+
+            var tambah = function(prod, cb){
+                setTimeout(function(){
+                    produk.push(prod);
+                    cb();
+                }, 3000);
+            };
+
+            var ambil = function(){
+                setTimeout(function(){
+                    console.log(produk);
+                }, 1000);
+            };
+
+            var baru = {
+                nama : "Vivo",
+                harga : 30000
+            };
+
+            tambah(baru, ambil);
+
+        }); // menunggu html dirender
+    </script>
+</body>
+</html>

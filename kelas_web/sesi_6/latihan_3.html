@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="nilai"></h1>
+    <h1 id="hasil"></h1>
+    <p id="target">target</p>
+    <style>
+        .ganjil {
+            color: red;
+        }
+
+        .genap {
+            color: green;
+        }
+    </style>
+    
+    <script>
+        // var angka = 10;
+
+        // while (angka > 0){
+        //     console.log(angka);
+        //     angka--;
+        // };
+
+        // do {
+        //     console.log(angka);
+        //     angka--;
+        // } while (angka > 0);
+
+        // var buahbuahan = ['apel', 'jeruk', 'mangga'];
+
+        // buahbuahan.forEach(function(buah){
+        //     console.log(buah);
+        // });
+
+        // var nama = 'tes ';
+
+        // console.log(nama.repeat(3));
+
+        // for (var i = 0; i < buahbuahan.length; i++){
+        //     console.log(buahbuahan[i]);
+        // };
+
+        // 
+
+        var n = prompt('masukkan angka');
+        var text = '';
+
+        // for (var i = 1; i<=n; i++){
+        //     text += i;
+
+        //     if(i!=n){
+        //         text += ',';
+        //     };
+        // };
+
+        // console.log(text);
+
+        // for (var i = 1; i<=n; i++){
+        //     text += "<p>" +i+"</p>";
+
+        //     if(i!=n){
+        //         text += '<hr>';
+        //     };
+        // };
+
+        for (var i = 1; i<=n; i++){
+            if(i%2!=0){
+                text += '<p class="ganjil">' +i+'</p>';
+
+                if(i!=n){
+                    text += '<hr>';
+                };
+            }else{
+                text += '<p class="genap">' +i+'</p>';
+
+                if(i!=n){
+                    text += '<hr>';
+                };
+            };
+        };
+
+        document.getElementById("target").innerHTML=text;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sesi 8</title>
+</head>
+<body>
+    <h1>judul</h1>
+    <script>
+        // var buah = {
+        //     nama : "jeruk",
+        //     warna : "kuning",
+        //     harga : 10000
+        // };
+
+        // console.log(buah.warna);
+        // console.log(buah["warna"]);
+
+        // var manusia = {
+        //     nama : "wahyu",
+        //     gender : "laki-laki",
+        //     usia : 21,
+        //     berat : 50,
+
+        //     makan : function(){
+        //         this.berat++;
+        //         console.log(this.berat)
+        //     }, olahraga : function(){
+        //         this.berat--;
+        //         console.log(this.berat)
+        //     }
+        // };
+
+        // console.log(manusia.usia);
+        // console.log(manusia["usia"]);
+
+        // manusia.makan();
+        // manusia.olahraga();
+
+        // var kue = function(nama, harga){
+        //     this.nama = nama;
+        //     this.harga = harga;
+        // };
+
+        // var bolu = new kue("bolu", 5000);
+
+        // console.log(bolu.nama);
+
+        // // 
+
+        // var them_dogs = [{
+        //     name: 'Henry',
+        //     age: 0.5,
+        //     breed: 'Aussie',
+        //     food: 'kibble',
+        //     toys: ['tennis ball', 'chew toy'],
+        //     picture: 'http://rubyriverminiaustralianshepherds.com/wp-content/uploads/aussie-puppy-for-sale-940x412.jpg'
+        // }, {
+        //     name: 'Tilly',
+        //     age: 5,
+        //     breed: 'Mutt',
+        //     food: 'kibble',
+        //     toys: ['bone', 'kong', 'squeaky toy'],
+        //     picture: 'http://www.dogchannel.com/images/zones/top_promo/excited-mixed-breed.jpg'
+        // }, {
+        //     name: 'Apollo',
+        //     age: 10,
+        //     breed: 'Labrador',
+        //     food: 'absolutely anything',
+        //     toys: ['old sock', 'other old sock', 'more old socks'],
+        //     picture: 'http://media.cmgdigital.com/shared/img/photos/2014/08/01/5a/66/LadyLabrador.jpg'
+        // }]
+
+        // console.log(them_dogs[0].toys[1]);
+
+        // 
+
+        var identitas = {
+            namaDepan : "nur",
+            namaBelakang : "wahyu",
+
+            fullName : function(){
+                console.log(this.namaDepan, this.namaBelakang);
+            }
+        }
+
+        identitas.fullName();
+
+        var propertyOrang = Object.keys(identitas);
+
+        console.log(propertyOrang);
+
+        console.log(identitas[propertyOrang[1]]);
+
+    </script>
+</body>
+</html>
