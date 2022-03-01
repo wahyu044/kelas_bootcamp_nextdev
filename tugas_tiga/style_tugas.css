@@ -1,0 +1,11 @@
+body {
+    background-color: orange;
+    padding: 20px;
+}
+
+.box {
+    background-color: yellow;
+    padding: 20px;
+    width: fit-content;
+    height: fit-content;
+}
