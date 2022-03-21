@@ -1,0 +1,3 @@
+https://github.com/afifai/PTP_76_lectures/blob/main/pertemuan_8-visualization_intermediate/covid_visualization.ipynb
+
+https://github.com/afifai/PTP_76_lectures/blob/main/pertemuan_8-visualization_intermediate/intro_map.ipynb
